@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Background Removal</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Background Removal</h1>
+    <input type="file" id="image-input" accept="image/*" />
+    <div class="options">
+      <label for="color-input">Background Color:</label>
+      <input type="color" id="color-input" value="#ffffff" />
+      <button id="remove-btn">Remove Background</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <a id="download-link" style="display:none" download="bg-removed.png">Download Result</a>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
