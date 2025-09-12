@@ -1,0 +1,144 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg,#c6f665 0%,#fda085 100%);
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  max-width: 500px;
+  background: #fff;s
+  padding: 2.5em 2em 2em 2em;
+  margin: 3em auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.10);
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fd9644;
+  margin-bottom: .5em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 1.3em;
+  color: #222f3e;
+  margin: 1.6em 0 0.8em 0;
+  text-align: left;
+  letter-spacing: 1px;
+}
+form {
+  display: flex;
+  gap: 0.7em;
+  margin-bottom: 1.4em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input[type="text"], input[type="number"] {
+  flex: 1 1 120px;
+  padding: 0.6em;
+  border: 1.5px solid #b2bec3;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f7fafd;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+}
+input:focus {
+  border-color: #fd9644;
+  outline: none;
+}
+button[type="submit"] {
+  background: linear-gradient(90deg, #fd9644 0%, #f6d365 100%);
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #f6d365 0%, #fd9644 100%);
+  transform: scale(1.04);
+}
+.book-card {
+  background: #fff8e2;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.08);
+  padding: 1em;
+  margin-bottom: 0.9em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.book-card.borrowed {
+  background: #ffe0b2;
+  opacity: 0.7;
+}
+.book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.book-title {
+  font-weight: 600;
+  font-size: 1.07em;
+  color: #353b48;
+}
+.book-meta {
+  font-size: 0.97em;
+  color: #718093;
+}
+.book-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.book-actions button {
+  padding: 0.35em 1em;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.97em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.borrow-btn {
+  background: #4cd137;
+  color: #fff;
+}
+.borrow-btn:hover {
+  background: #7bed9f;
+  transform: scale(1.07);
+}
+.return-btn {
+  background: #3867d6;
+  color: #fff;
+}
+.return-btn:hover {
+  background: #63a4ff;
+  transform: scale(1.07);
+}
+.delete-btn {
+  background: #d32f2f;
+  color: #fff;
+}
+.delete-btn:hover {
+  background: #ff5252;
+  transform: scale(1.07);
+}
+@media (max-width: 650px) {
+  .container {
+    max-width: 98vw;
+    padding: 1.2em 0.6em 1.2em 0.6em;
+  }
+  form {
+    flex-direction: column;
+    gap: 0.6em;
+  }
+}
